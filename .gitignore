@@ -1,0 +1,4 @@
+.pytest_cache/
+.streamlit/
+.venv/
+ev_database.duckdb
