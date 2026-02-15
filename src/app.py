@@ -40,8 +40,9 @@ class DashboardApp:
         st.title("⚡ Tableau de Bord Analytique des Véhicules Électriques")
         st.markdown("""
         Explorez les données des véhicules électriques avec des visualisations interactives.
-        Filtrez par marque, segment et type de carrosserie pour analyser les performances.
+        Filtrez par marque, segment et type de carrosserie pour analyser les Performances.
         """)
+        st.subheader("MEMBRE DU GROUPE : SONTSA CHRISTIAN - NZATI STEPHANE - SAMA CAMELIA - MBOULA Monica")
     
     def render_file_upload_section(self) -> None:
         """Affiche la section de téléchargement de fichier."""
@@ -240,12 +241,11 @@ class DashboardApp:
         self.render_reset_button()
         
         # Pied de page
-        st.markdown("""
-        ---
-        **Tableau de Bord Analytique des Véhicules Électriques** | 
-        Données: electric_vehicles_spec_2025.csv | 
+        st.markdown("""<br/><div style="text-align: center;">
+        <b>Tableau de Bord Analytique des Véhicules Électriques.</b><br>
+        Données: electric_vehicles_spec_2025.csv.
         Technologie: Streamlit + DuckDB + Plotly
-        """)
+        </div>""", unsafe_allow_html=True)
 
 
 def main():
